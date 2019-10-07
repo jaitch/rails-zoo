@@ -1,0 +1,13 @@
+<h1>All the Animals in the Zoo!</h1>
+<ul>
+<% @animals.each do |animal|%>
+
+<li><strong>Meet <%=animal.name%>!</strong> <br>
+  <%=animal.name%> is a <%=animal.species%> here at the Rails Zoo. <%=animal.name%> is <%=animal.age%> years old.
+  <%= link_to "Get to know #{animal.name}", animal_path(animal) %>
+</li>
+<br>
+<% end %>
+</ul>
+
+<button_to "Add an Animal", >

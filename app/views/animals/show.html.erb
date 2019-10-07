@@ -1,0 +1,7 @@
+<h1> <%= @animal.name.upcase %> </h1>
+<img src="http://lorempixel.com/400/200/animals" alt="animal photo">
+
+<h2> Species: <%=@animal.species%> </h2>
+<h2> Age: <%=@animal.age%> </h2>
+
+<%= link_to "All of the Animals", animals_path %>
