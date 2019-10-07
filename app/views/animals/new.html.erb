@@ -1,8 +1,8 @@
 <p>Please enter the information for the new animal: </p>
 
-<%= form_with model: @animal, do |f| %>
+<%= form_with model: @animal do |f| %>
 
-<%= f.label "Animal's name:" %>
+<%= f.label "Animal's Name:" %>
 <%= f.text_field :name %>
 <br>
 <%= f.label "Species:" %>
@@ -11,4 +11,6 @@
 <%= f.label "Age:" %>
 <%= f.text_field :age %>
 <br>
-<%= f.submit "new" %>
+<%= f.submit "update" %>
+
+<% end %>
